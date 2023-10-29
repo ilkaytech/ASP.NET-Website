@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="_main.master.cs" Inherits="_mainmaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Yüzey Ajans | Mezuniyet Yıllığı Ankara | Okul Yıllık İstanbul</title>
+                        
+    <link rel="stylesheet" href="media/css/style.css" type="text/css" media="screen" />                      
+    <link rel="stylesheet" href="media/css/prettyPhoto.css" type="text/css" media="screen" />   
+    <link rel="stylesheet" href="media/css/tipsy.css" type="text/css" media="screen" />              
+    <link rel="stylesheet" href="media/css/jCarousel.css" type="text/css" media="screen" />  
+    
+    <!--[if IE]> 
+        <link rel="stylesheet" href="media/css/ie.css" type="text/css" media="screen, projection" /> 
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="media/css/ie7.css" type="text/css" media="screen" />
+    <![endif]-->
+	  
+    <link rel="stylesheet" href="media/css/colors/grunge.css" type="text/css" media="screen" />   <!-- COLOR -->                
+	
+	<script type='text/javascript' src='media/js/jquery.js'></script>
+	<script type='text/javascript' src='media/js/ui.core.js'></script>
+	<script type='text/javascript' src='media/js/jquery.cycle.all.min.js'></script>
+	<script type='text/javascript' src='media/js/jquery.nivo.slider.pack.js'></script>
+	<script type='text/javascript' src='media/js/jquery.easing.1.3.js'></script>
+	<script type='text/javascript' src='media/js/jquery.prettyPhoto.js'></script>
+	<script type='text/javascript' src='media/js/jquery.jcarousel.min.js'></script>
+	<script type='text/javascript' src='media/js/jquery.tipsy.js'></script>
+	<script type='text/javascript' src='media/js/jquery.arrowFade.js'></script>
+	<script type='text/javascript' src='media/js/ui.tabs.js'></script>
+	<script type='text/javascript' src='media/js/jquery.custom.js'></script>               
+	<script type='text/javascript' src='media/js/jquery.tweetable.js'></script> 
+	<script type='text/javascript' src='media/js/cufon-yui.js'></script>
+	<script type='text/javascript' src='media/js/waukegan.font.js'></script>   
+	
+    <link rel="shortcut icon" type="image/x-icon" href="media/images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="media/images/favicon.png" />  
+      
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $("a[rel^='prettyPhoto']").prettyPhoto({
+                theme: 'facebook'
+            });
+        });
+    </script>    
+    <asp:ContentPlaceHolder id="cph_head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="widget" style="position: fixed; top: 40px; right: 30px;">
+	                <a target="_blank" href="https://www.facebook.com/pages/Y%C3%BCzey-Ajans/271574832959666?ref=hl" class="socials facebook" title="Yüzey Ajans">facebook</a>
+                    <a target="_blank" href="https://www.facebook.com/pages/St%C3%BCdyo-Y%C3%BCzey/647344785276196" class="socials facebook" title="Stüdyo Yüzey">facebook</a>
+					<a target="_blank" href="https://twitter.com/yuzeyajans" class="socials twitter" title="Yüzey Ajans">rss</a>
+	                <div class="clear"></div> 
+	            </div>  
+   
+    <div id="top-space"></div>
+
+    
+    <div id="header">
+        
+        <div class="inner">
+        
+            
+            <div id="logo">
+                <a href="default.aspx" title="Yüzey Ajans Mezuniyet Yıllıkları">Yüzey Ajans Mezuniyet Yıllıkları</a>
+            </div>
+          
+            <div id="nav">
+				
+				<ul class="level-1 black">
+					
+					<li><a href="default.aspx">ANASAYFA</a><span> hoşgeldiniz</span></li>
+					<li><a href="mezuniyet-yilligi-ankara.aspx">MEZUNİYET YILLIĞI</a><span> yıllık örnekleri &amp; tasarımlar</span></li>
+					<li><a href="matbaa-hizmetleri.aspx">HİZMETLERİMİZ</a><span> kurumsal &amp; bireysel</span></li>
+					<li><a href="hakkimizda.aspx">HAKKIMIZDA</a><span> biz kimiz?</span></li>
+					<li><a href="iletisim.aspx">İLETİŞİM</a><span> bize ulaşın</span></li>
+					
+				</ul>
+				
+			</div>            
+			
+            
+            <div class="clear"></div>
+            
+        </div>
+            
+    </div>
+    
+
+    
+    
+   
+  
+    
+        <asp:ContentPlaceHolder ID="cph_content" runat="server">
+        </asp:ContentPlaceHolder>
+    
+   
+	
+	
+    
+	
+      
+    
+    
+    <p id="copyright">Yüzey Ajans | Tüm Hakları Saklıdır | <a href="http://www.ilkaytech.com" target="_blank">İlkaytech</a></p>
+                                     
+    
+    <script type="text/javascript">
+        //<![CDATA[
+        Cufon.now();  //]]>   
+    </script>
+
+
+
+    </form>
+</body>
+</html>
